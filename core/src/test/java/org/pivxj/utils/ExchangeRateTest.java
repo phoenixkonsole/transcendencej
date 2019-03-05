@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,7 +24,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.airwirej.core.Coin;
+import org.transcendencej.core.Coin;
 
 public class ExchangeRateTest {
 

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.testing;
+package org.transcendencej.testing;
 
-import org.airwirej.core.*;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.*;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
-import org.airwirej.core.Base58;
+import org.transcendencej.core.Base58;
 import com.google.common.base.Functions;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Iterables;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.params.MainNetParams;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.params.MainNetParams;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 
 /**

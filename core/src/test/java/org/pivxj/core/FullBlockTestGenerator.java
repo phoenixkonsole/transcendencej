@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import org.airwirej.core.Transaction.SigHash;
-import org.airwirej.crypto.TransactionSignature;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
+import org.transcendencej.core.Transaction.SigHash;
+import org.transcendencej.crypto.TransactionSignature;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
 import com.google.common.base.Preconditions;
 
 import javax.annotation.Nullable;
@@ -30,8 +30,8 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.script.ScriptOpCodes.*;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 

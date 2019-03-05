@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.TransactionInput;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.

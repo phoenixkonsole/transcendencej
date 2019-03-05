@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.airwirej.core.*;
+import org.transcendencej.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

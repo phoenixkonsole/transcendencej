@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
-import org.airwirej.core.BloomFilter;
-import org.airwirej.core.ECKey;
-import org.airwirej.core.Utils;
-import org.airwirej.crypto.KeyCrypter;
-import org.airwirej.crypto.KeyCrypterException;
-import org.airwirej.crypto.KeyCrypterScrypt;
-import org.airwirej.utils.Threading;
+import org.transcendencej.core.BloomFilter;
+import org.transcendencej.core.ECKey;
+import org.transcendencej.core.Utils;
+import org.transcendencej.crypto.KeyCrypter;
+import org.transcendencej.crypto.KeyCrypterException;
+import org.transcendencej.crypto.KeyCrypterScrypt;
+import org.transcendencej.utils.Threading;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
-import org.airwirej.wallet.listeners.AbstractKeyChainEventListener;
+import org.transcendencej.wallet.listeners.AbstractKeyChainEventListener;
 import org.junit.Before;
 import org.junit.Test;
 

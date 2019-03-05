@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.store.BlockStoreException;
-import org.airwirej.store.FullPrunedBlockStore;
-import org.airwirej.store.MemoryFullPrunedBlockStore;
+import org.transcendencej.store.BlockStoreException;
+import org.transcendencej.store.FullPrunedBlockStore;
+import org.transcendencej.store.MemoryFullPrunedBlockStore;
 
 /**
  * A MemoryStore implementation of the FullPrunedBlockStoreTest

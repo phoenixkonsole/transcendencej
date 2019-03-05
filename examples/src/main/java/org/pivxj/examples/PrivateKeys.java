@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.*;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.*;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

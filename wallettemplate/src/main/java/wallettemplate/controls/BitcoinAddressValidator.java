@@ -14,9 +14,9 @@
 
 package wallettemplate.controls;
 
-import org.airwirej.core.Address;
-import org.airwirej.core.AddressFormatException;
-import org.airwirej.core.NetworkParameters;
+import org.transcendencej.core.Address;
+import org.transcendencej.core.AddressFormatException;
+import org.transcendencej.core.NetworkParameters;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import wallettemplate.utils.TextFieldValidator;

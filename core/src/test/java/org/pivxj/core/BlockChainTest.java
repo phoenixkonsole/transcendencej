@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet2Params;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.testing.FakeTxBuilder;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.Wallet.BalanceType;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet2Params;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.testing.FakeTxBuilder;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.Wallet.BalanceType;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import org.junit.rules.ExpectedException;
@@ -38,9 +38,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.testing.FakeTxBuilder.createFakeBlock;
-import static org.airwirej.testing.FakeTxBuilder.createFakeTx;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeBlock;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.airwirej.net.discovery;
+package org.transcendencej.net.discovery;
 
-import org.airwirej.params.MainNetParams;
+import org.transcendencej.params.MainNetParams;
 import org.junit.Test;
 
 import java.net.InetSocketAddress;

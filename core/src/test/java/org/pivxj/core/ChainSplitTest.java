@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.core.listeners.TransactionConfidenceEventListener;
-import org.airwirej.core.TransactionConfidence.ConfidenceType;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.testing.FakeTxBuilder;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.WalletTransaction;
-import org.airwirej.wallet.listeners.WalletChangeEventListener;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.airwirej.wallet.listeners.WalletReorganizeEventListener;
+import org.transcendencej.core.listeners.TransactionConfidenceEventListener;
+import org.transcendencej.core.TransactionConfidence.ConfidenceType;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.testing.FakeTxBuilder;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.WalletTransaction;
+import org.transcendencej.wallet.listeners.WalletChangeEventListener;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.wallet.listeners.WalletReorganizeEventListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

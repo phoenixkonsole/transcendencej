@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.airwirej.core.*;
+import org.transcendencej.core.*;
 
 import java.util.ArrayList;
 

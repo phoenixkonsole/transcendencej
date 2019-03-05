@@ -1,8 +1,8 @@
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
-import org.airwirej.core.Address;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.wallet.DeterministicKeyChain;
+import org.transcendencej.core.Address;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.wallet.DeterministicKeyChain;
 import org.junit.Test;
 
 import java.security.SecureRandom;

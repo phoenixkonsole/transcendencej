@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
-import org.airwirej.core.*;
-import org.airwirej.crypto.*;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.listeners.AbstractKeyChainEventListener;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.*;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.listeners.AbstractKeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;

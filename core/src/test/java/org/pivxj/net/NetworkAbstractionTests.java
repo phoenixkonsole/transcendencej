@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.airwirej.net;
+package org.transcendencej.net;
 
-import org.airwirej.core.Utils;
+import org.transcendencej.core.Utils;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.paymentchannel.Protos;

@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.airwirej.script;
+package org.transcendencej.script;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.airwirej.core.*;
-import org.airwirej.core.Transaction.SigHash;
-import org.airwirej.crypto.TransactionSignature;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.script.Script.VerifyFlag;
+import org.transcendencej.core.*;
+import org.transcendencej.core.Transaction.SigHash;
+import org.transcendencej.crypto.TransactionSignature;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.script.Script.VerifyFlag;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -41,9 +41,9 @@ import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.util.*;
 
-import static org.airwirej.core.Utils.HEX;
-import static org.airwirej.script.ScriptOpCodes.OP_0;
-import static org.airwirej.script.ScriptOpCodes.OP_INVALIDOPCODE;
+import static org.transcendencej.core.Utils.HEX;
+import static org.transcendencej.script.ScriptOpCodes.OP_0;
+import static org.transcendencej.script.ScriptOpCodes.OP_INVALIDOPCODE;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
 import org.junit.Before;

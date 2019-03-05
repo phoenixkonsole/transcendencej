@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.Networks;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.Networks;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -31,7 +31,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class AddressTest {

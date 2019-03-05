@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import java.io.File;
 
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.wallet.Wallet;
 
 /**
  * DumpWallet loads a serialized wallet and prints information about what it contains.

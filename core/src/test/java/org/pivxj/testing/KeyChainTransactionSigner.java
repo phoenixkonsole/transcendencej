@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.testing;
+package org.transcendencej.testing;
 
-import org.airwirej.core.Sha256Hash;
-import org.airwirej.crypto.ChildNumber;
-import org.airwirej.crypto.DeterministicKey;
-import org.airwirej.signers.CustomTransactionSigner;
-import org.airwirej.wallet.DeterministicKeyChain;
+import org.transcendencej.core.Sha256Hash;
+import org.transcendencej.crypto.ChildNumber;
+import org.transcendencej.crypto.DeterministicKey;
+import org.transcendencej.signers.CustomTransactionSigner;
+import org.transcendencej.wallet.DeterministicKeyChain;
 import com.google.common.collect.ImmutableList;
 
 import java.util.List;

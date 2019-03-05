@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.airwirej.core.listeners.DownloadProgressTracker;
-import org.airwirej.core.Coin;
-import org.airwirej.utils.MonetaryFormat;
+import org.transcendencej.core.listeners.DownloadProgressTracker;
+import org.transcendencej.core.Coin;
+import org.transcendencej.utils.MonetaryFormat;
 import com.subgraph.orchid.TorClient;
 import com.subgraph.orchid.TorInitializationListener;
 import javafx.animation.FadeTransition;

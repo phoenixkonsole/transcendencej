@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.listeners.PeerConnectedEventListener;
-import org.airwirej.core.listeners.PeerDisconnectedEventListener;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.Peer;
-import org.airwirej.core.PeerGroup;
-import org.airwirej.net.discovery.DnsDiscovery;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.utils.BriefLogFormatter;
+import org.transcendencej.core.listeners.PeerConnectedEventListener;
+import org.transcendencej.core.listeners.PeerDisconnectedEventListener;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.Peer;
+import org.transcendencej.core.PeerGroup;
+import org.transcendencej.net.discovery.DnsDiscovery;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

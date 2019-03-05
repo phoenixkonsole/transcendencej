@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
 import org.junit.Test;
 

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.store;
+package org.transcendencej.store;
 
-import org.airwirej.core.Address;
-import org.airwirej.core.ECKey;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.StoredBlock;
-import org.airwirej.params.UnitTestParams;
+import org.transcendencej.core.Address;
+import org.transcendencej.core.ECKey;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.StoredBlock;
+import org.transcendencej.params.UnitTestParams;
 import org.junit.Test;
 
 import java.io.File;

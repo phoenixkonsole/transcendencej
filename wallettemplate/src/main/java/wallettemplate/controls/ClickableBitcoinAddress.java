@@ -14,8 +14,8 @@
 
 package wallettemplate.controls;
 
-import org.airwirej.core.Address;
-import org.airwirej.uri.SendURI;
+import org.transcendencej.core.Address;
+import org.transcendencej.uri.SendURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;

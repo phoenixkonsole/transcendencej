@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.store.BlockStoreException;
-import org.airwirej.store.FullPrunedBlockStore;
-import org.airwirej.store.PostgresFullPrunedBlockStore;
+import org.transcendencej.store.BlockStoreException;
+import org.transcendencej.store.FullPrunedBlockStore;
+import org.transcendencej.store.PostgresFullPrunedBlockStore;
 import org.junit.After;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -28,7 +28,7 @@ import org.junit.Test;
 public class PostgresFullPrunedBlockChainTest extends AbstractFullPrunedBlockChainTest
 {
     // Replace these with your postgres location/credentials and remove @Ignore to test
-    // You can set up a fresh postgres with the command: create user airwirej superuser password 'password';
+    // You can set up a fresh postgres with the command: create user transcendencej superuser password 'password';
     private static final String DB_HOSTNAME = "localhost";
     private static final String DB_NAME = CoinDefinition.coinName.toLowerCase() + "j_test";
     private static final String DB_USERNAME = CoinDefinition.coinName.toLowerCase() +"j";

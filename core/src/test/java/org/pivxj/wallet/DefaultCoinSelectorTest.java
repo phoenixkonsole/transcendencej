@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
-import org.airwirej.core.*;
-import org.airwirej.params.*;
-import org.airwirej.testing.*;
+import org.transcendencej.core.*;
+import org.transcendencej.params.*;
+import org.transcendencej.testing.*;
 import org.junit.*;
 
 import java.net.*;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.*;
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class DefaultCoinSelectorTest extends TestWithWallet {

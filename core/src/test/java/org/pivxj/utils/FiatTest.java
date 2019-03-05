@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
-import static org.airwirej.utils.Fiat.parseFiat;
+import static org.transcendencej.utils.Fiat.parseFiat;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

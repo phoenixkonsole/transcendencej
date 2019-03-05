@@ -1,6 +1,6 @@
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.MainNetParams;
+import org.transcendencej.params.MainNetParams;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 /**

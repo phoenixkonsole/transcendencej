@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.collect.Lists;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.script.Script;
-import org.airwirej.store.BlockStoreException;
-import org.airwirej.store.FullPrunedBlockStore;
-import org.airwirej.utils.BlockFileLoader;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.SendRequest;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.WalletTransaction;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.script.Script;
+import org.transcendencej.store.BlockStoreException;
+import org.transcendencej.store.FullPrunedBlockStore;
+import org.transcendencej.utils.BlockFileLoader;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.SendRequest;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.WalletTransaction;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -38,7 +38,7 @@ import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.airwirej.core.Coin.FIFTY_COINS;
+import static org.transcendencej.core.Coin.FIFTY_COINS;
 import static org.junit.Assert.*;
 import org.junit.rules.ExpectedException;
 

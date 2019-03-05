@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
-import org.airwirej.testing.FooWalletExtension;
-import org.airwirej.testing.TestWithWallet;
+import org.transcendencej.testing.FooWalletExtension;
+import org.transcendencej.testing.TestWithWallet;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

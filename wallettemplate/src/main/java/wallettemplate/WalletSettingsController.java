@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.airwirej.core.Utils;
-import org.airwirej.crypto.MnemonicCode;
-import org.airwirej.wallet.DeterministicSeed;
+import org.transcendencej.core.Utils;
+import org.transcendencej.crypto.MnemonicCode;
+import org.transcendencej.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;
@@ -168,7 +168,7 @@ public class WalletSettingsController {
 
         long birthday = datePicker.getValue().atStartOfDay().toEpochSecond(ZoneOffset.UTC);
         DeterministicSeed seed = new DeterministicSeed(Splitter.on(' ').splitToList(wordsArea.getText()), null, "", birthday);
-        // Shut down airwirej and restart it with the new seed.
+        // Shut down transcendencej and restart it with the new seed.
         Main.bitcoin.addListener(new Service.Listener() {
             @Override
             public void terminated(Service.State from) {

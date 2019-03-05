@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.airwirej.core.MasterNodePaymentWinner;
+import org.transcendencej.core.MasterNodePaymentWinner;
 
 import java.util.ArrayList;
 

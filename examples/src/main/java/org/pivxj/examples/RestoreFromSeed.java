@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.listeners.DownloadProgressTracker;
-import org.airwirej.core.*;
-import org.airwirej.net.discovery.DnsDiscovery;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.store.SPVBlockStore;
-import org.airwirej.wallet.DeterministicSeed;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.listeners.DownloadProgressTracker;
+import org.transcendencej.core.*;
+import org.transcendencej.net.discovery.DnsDiscovery;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.store.SPVBlockStore;
+import org.transcendencej.wallet.DeterministicSeed;
+import org.transcendencej.wallet.Wallet;
 
 import java.io.File;
 

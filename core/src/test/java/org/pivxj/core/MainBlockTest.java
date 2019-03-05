@@ -1,12 +1,12 @@
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.util.concurrent.ListenableFuture;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet2Params;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet2Params;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.Wallet;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 

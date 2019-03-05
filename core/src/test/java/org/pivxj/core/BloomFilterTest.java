@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.MainNetParams;
-import org.airwirej.wallet.KeyChainGroup;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.wallet.KeyChainGroup;
+import org.transcendencej.wallet.Wallet;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BloomFilterTest {

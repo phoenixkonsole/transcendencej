@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
-import org.airwirej.core.ECKey;
-import org.airwirej.crypto.BIP38PrivateKey.BadPassphraseException;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
+import org.transcendencej.core.ECKey;
+import org.transcendencej.crypto.BIP38PrivateKey.BadPassphraseException;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

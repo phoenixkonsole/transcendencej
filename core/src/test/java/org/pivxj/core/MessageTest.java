@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.UnitTestParams;
+import org.transcendencej.params.UnitTestParams;
 import org.junit.Test;
 
 public class MessageTest {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import static org.fusesource.leveldbjni.JniDBFactory.*;
 

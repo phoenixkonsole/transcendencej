@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.airwirej.protocols.payments;
+package org.transcendencej.protocols.payments;
 
-import org.airwirej.core.*;
-import org.airwirej.crypto.TrustStoreLoader;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.TrustStoreLoader;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.protocols.payments.Protos;
@@ -32,7 +32,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static org.airwirej.core.Coin.COIN;
+import static org.transcendencej.core.Coin.COIN;
 import static org.junit.Assert.*;
 
 public class PaymentSessionTest {

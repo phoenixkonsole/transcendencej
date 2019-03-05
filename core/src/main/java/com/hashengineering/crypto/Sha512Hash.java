@@ -17,8 +17,8 @@
 package com.hashengineering.crypto;
 
 import com.google.common.io.ByteStreams;
-import org.airwirej.core.Sha256Hash;
-import org.airwirej.core.Utils;
+import org.transcendencej.core.Sha256Hash;
+import org.transcendencej.core.Utils;
 import org.spongycastle.util.encoders.Hex;
 
 import java.io.File;

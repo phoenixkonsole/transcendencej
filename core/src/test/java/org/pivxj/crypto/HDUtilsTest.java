@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import java.util.List;
 
 public class HDUtilsTest {

@@ -14,10 +14,10 @@
 
 package wallettemplate.utils;
 
-import org.airwirej.core.listeners.DownloadProgressTracker;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.listeners.WalletChangeEventListener;
-import org.airwirej.core.*;
+import org.transcendencej.core.listeners.DownloadProgressTracker;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.listeners.WalletChangeEventListener;
+import org.transcendencej.core.*;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;

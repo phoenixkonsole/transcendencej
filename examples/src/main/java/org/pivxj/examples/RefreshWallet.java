@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.*;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.core.*;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import java.io.File;
 

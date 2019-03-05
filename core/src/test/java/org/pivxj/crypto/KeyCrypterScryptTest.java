@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
-import org.airwirej.core.Utils;
-import org.airwirej.utils.BriefLogFormatter;
+import org.transcendencej.core.Utils;
+import org.transcendencej.utils.BriefLogFormatter;
 import com.google.protobuf.ByteString;
 
-import org.airwirej.wallet.Protos;
-import org.airwirej.wallet.Protos.ScryptParameters;
+import org.transcendencej.wallet.Protos;
+import org.transcendencej.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

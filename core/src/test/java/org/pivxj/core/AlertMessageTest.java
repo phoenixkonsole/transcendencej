@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.UnitTestParams;
+import org.transcendencej.params.UnitTestParams;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

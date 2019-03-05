@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
-package org.airwirej.store;
+package org.transcendencej.store;
 
-import org.airwirej.core.*;
-import org.airwirej.core.Transaction.Purpose;
-import org.airwirej.core.TransactionConfidence.ConfidenceType;
-import org.airwirej.crypto.DeterministicKey;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.testing.FakeTxBuilder;
-import org.airwirej.testing.FooWalletExtension;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.DeterministicKeyChain;
-import org.airwirej.wallet.KeyChain;
+import org.transcendencej.core.*;
+import org.transcendencej.core.Transaction.Purpose;
+import org.transcendencej.core.TransactionConfidence.ConfidenceType;
+import org.transcendencej.crypto.DeterministicKey;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.testing.FakeTxBuilder;
+import org.transcendencej.testing.FooWalletExtension;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.DeterministicKeyChain;
+import org.transcendencej.wallet.KeyChain;
 import com.google.protobuf.ByteString;
 
-import org.airwirej.wallet.MarriedKeyChain;
-import org.airwirej.wallet.Protos;
-import org.airwirej.wallet.UnreadableWalletException;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.WalletExtension;
-import org.airwirej.wallet.WalletProtobufSerializer;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.wallet.MarriedKeyChain;
+import org.transcendencej.wallet.Protos;
+import org.transcendencej.wallet.UnreadableWalletException;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.WalletExtension;
+import org.transcendencej.wallet.WalletProtobufSerializer;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -52,8 +52,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.testing.FakeTxBuilder.createFakeTx;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 

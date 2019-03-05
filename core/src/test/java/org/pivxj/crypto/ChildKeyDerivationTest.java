@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.airwirej.crypto;
+package org.transcendencej.crypto;
 
-import org.airwirej.core.*;
-import org.airwirej.params.*;
-import org.airwirej.wallet.DeterministicKeyChain;
+import org.transcendencej.core.*;
+import org.transcendencej.params.*;
+import org.transcendencej.wallet.DeterministicKeyChain;
 import org.junit.*;
 import org.spongycastle.crypto.params.*;
 
-import static org.airwirej.core.Utils.*;
+import static org.transcendencej.core.Utils.*;
 import static org.junit.Assert.*;
 
 /**

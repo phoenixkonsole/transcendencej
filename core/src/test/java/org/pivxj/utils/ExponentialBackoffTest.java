@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
-import org.airwirej.core.Utils;
+import org.transcendencej.core.Utils;
 
 import org.junit.Before;
 import org.junit.Test;

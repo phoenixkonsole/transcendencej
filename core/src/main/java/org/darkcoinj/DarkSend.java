@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.airwirej.core.DarkSendQueue;
-import org.airwirej.core.Sha256Hash;
+import org.transcendencej.core.DarkSendQueue;
+import org.transcendencej.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

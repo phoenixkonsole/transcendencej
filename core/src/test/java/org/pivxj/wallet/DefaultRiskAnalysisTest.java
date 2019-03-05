@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
 import com.google.common.collect.*;
-import org.airwirej.core.*;
-import org.airwirej.crypto.*;
-import org.airwirej.params.*;
-import org.airwirej.script.*;
-import org.airwirej.testing.FakeTxBuilder;
-import org.airwirej.wallet.DefaultRiskAnalysis.*;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.*;
+import org.transcendencej.params.*;
+import org.transcendencej.script.*;
+import org.transcendencej.testing.FakeTxBuilder;
+import org.transcendencej.wallet.DefaultRiskAnalysis.*;
 import org.junit.*;
 
 import java.util.*;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.script.ScriptOpCodes.*;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.script.ScriptOpCodes.*;
 import static org.junit.Assert.*;
 
 public class DefaultRiskAnalysisTest {

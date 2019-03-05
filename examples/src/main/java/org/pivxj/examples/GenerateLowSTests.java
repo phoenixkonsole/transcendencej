@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,24 +24,24 @@ import java.util.EnumSet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import org.airwirej.core.Coin;
-import org.airwirej.core.ECKey;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.ScriptException;
-import org.airwirej.core.Transaction;
-import org.airwirej.core.TransactionInput;
-import org.airwirej.core.TransactionOutput;
-import org.airwirej.core.Utils;
-import org.airwirej.crypto.TransactionSignature;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.script.ScriptChunk;
-import static org.airwirej.script.ScriptOpCodes.getOpCodeName;
-import org.airwirej.signers.LocalTransactionSigner;
-import org.airwirej.signers.TransactionSigner.ProposedTransaction;
-import org.airwirej.wallet.KeyBag;
-import org.airwirej.wallet.RedeemData;
+import org.transcendencej.core.Coin;
+import org.transcendencej.core.ECKey;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.ScriptException;
+import org.transcendencej.core.Transaction;
+import org.transcendencej.core.TransactionInput;
+import org.transcendencej.core.TransactionOutput;
+import org.transcendencej.core.Utils;
+import org.transcendencej.crypto.TransactionSignature;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.script.ScriptChunk;
+import static org.transcendencej.script.ScriptOpCodes.getOpCodeName;
+import org.transcendencej.signers.LocalTransactionSigner;
+import org.transcendencej.signers.TransactionSigner.ProposedTransaction;
+import org.transcendencej.wallet.KeyBag;
+import org.transcendencej.wallet.RedeemData;
 
 /**
  * Test case generator for transactions with low-S and high-S signatures, to

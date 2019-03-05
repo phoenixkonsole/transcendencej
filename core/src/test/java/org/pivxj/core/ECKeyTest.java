@@ -15,25 +15,25 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.core.ECKey.ECDSASignature;
-import org.airwirej.crypto.EncryptedData;
-import org.airwirej.crypto.KeyCrypter;
-import org.airwirej.crypto.KeyCrypterScrypt;
-import org.airwirej.crypto.TransactionSignature;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.utils.BriefLogFormatter;
+import org.transcendencej.core.ECKey.ECDSASignature;
+import org.transcendencej.crypto.EncryptedData;
+import org.transcendencej.crypto.KeyCrypter;
+import org.transcendencej.crypto.KeyCrypterScrypt;
+import org.transcendencej.crypto.TransactionSignature;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.ByteString;
-import org.airwirej.wallet.Protos;
-import org.airwirej.wallet.Protos.ScryptParameters;
+import org.transcendencej.wallet.Protos;
+import org.transcendencej.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -50,8 +50,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
 
-import static org.airwirej.core.Utils.HEX;
-import static org.airwirej.core.Utils.reverseBytes;
+import static org.transcendencej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.reverseBytes;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

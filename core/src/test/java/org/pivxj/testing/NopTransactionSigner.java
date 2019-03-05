@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.airwirej.testing;
+package org.transcendencej.testing;
 
-import org.airwirej.signers.TransactionSigner;
-import org.airwirej.wallet.KeyBag;
+import org.transcendencej.signers.TransactionSigner;
+import org.transcendencej.wallet.KeyBag;
 
 public class NopTransactionSigner implements TransactionSigner {
     private boolean isReady;

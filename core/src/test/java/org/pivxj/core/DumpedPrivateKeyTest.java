@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
@@ -25,8 +25,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
 
 public class DumpedPrivateKeyTest {
 

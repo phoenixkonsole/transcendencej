@@ -15,51 +15,51 @@
  * limitations under the License.
  */
 
-package org.airwirej.wallet;
+package org.transcendencej.wallet;
 
-import org.airwirej.core.listeners.TransactionConfidenceEventListener;
-import org.airwirej.core.AbstractBlockChain;
-import org.airwirej.core.Address;
-import org.airwirej.core.Block;
-import org.airwirej.core.BlockChain;
-import org.airwirej.core.Coin;
-import org.airwirej.core.ECKey;
-import org.airwirej.core.InsufficientMoneyException;
-import org.airwirej.core.PeerAddress;
-import org.airwirej.core.Sha256Hash;
-import org.airwirej.core.StoredBlock;
-import org.airwirej.core.Transaction;
-import org.airwirej.core.TransactionConfidence;
-import org.airwirej.core.TransactionInput;
-import org.airwirej.core.TransactionOutPoint;
-import org.airwirej.core.TransactionOutput;
-import org.airwirej.core.Utils;
-import org.airwirej.core.VerificationException;
-import org.airwirej.core.TransactionConfidence.ConfidenceType;
-import org.airwirej.crypto.*;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.signers.StatelessTransactionSigner;
-import org.airwirej.signers.TransactionSigner;
-import org.airwirej.store.BlockStoreException;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.testing.*;
-import org.airwirej.utils.ExchangeRate;
-import org.airwirej.utils.Fiat;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.Wallet.BalanceType;
-import org.airwirej.wallet.WalletTransaction.Pool;
-import org.airwirej.wallet.listeners.KeyChainEventListener;
-import org.airwirej.wallet.listeners.WalletChangeEventListener;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.airwirej.wallet.listeners.WalletCoinsSentEventListener;
+import org.transcendencej.core.listeners.TransactionConfidenceEventListener;
+import org.transcendencej.core.AbstractBlockChain;
+import org.transcendencej.core.Address;
+import org.transcendencej.core.Block;
+import org.transcendencej.core.BlockChain;
+import org.transcendencej.core.Coin;
+import org.transcendencej.core.ECKey;
+import org.transcendencej.core.InsufficientMoneyException;
+import org.transcendencej.core.PeerAddress;
+import org.transcendencej.core.Sha256Hash;
+import org.transcendencej.core.StoredBlock;
+import org.transcendencej.core.Transaction;
+import org.transcendencej.core.TransactionConfidence;
+import org.transcendencej.core.TransactionInput;
+import org.transcendencej.core.TransactionOutPoint;
+import org.transcendencej.core.TransactionOutput;
+import org.transcendencej.core.Utils;
+import org.transcendencej.core.VerificationException;
+import org.transcendencej.core.TransactionConfidence.ConfidenceType;
+import org.transcendencej.crypto.*;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.signers.StatelessTransactionSigner;
+import org.transcendencej.signers.TransactionSigner;
+import org.transcendencej.store.BlockStoreException;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.testing.*;
+import org.transcendencej.utils.ExchangeRate;
+import org.transcendencej.utils.Fiat;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.Wallet.BalanceType;
+import org.transcendencej.wallet.WalletTransaction.Pool;
+import org.transcendencej.wallet.listeners.KeyChainEventListener;
+import org.transcendencej.wallet.listeners.WalletChangeEventListener;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.wallet.listeners.WalletCoinsSentEventListener;
 import org.easymock.EasyMock;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
-import org.airwirej.wallet.Protos.Wallet.EncryptionType;
+import org.transcendencej.wallet.Protos.Wallet.EncryptionType;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -79,9 +79,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.core.Utils.HEX;
-import static org.airwirej.testing.FakeTxBuilder.*;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.core.Utils.HEX;
+import static org.transcendencej.testing.FakeTxBuilder.*;
 import static org.easymock.EasyMock.createMock;
 import static org.easymock.EasyMock.replay;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -807,7 +807,7 @@ public class WalletTest extends TestWithWallet {
         Transaction send1 = checkNotNull(wallet.createSend(OTHER_ADDRESS, value2));
         Transaction send2 = checkNotNull(wallet.createSend(OTHER_ADDRESS, value2));
         byte[] buf = send1.bitcoinSerialize();
-        buf[43] = 0;  // Break the signature: airwirej won't check in SPV mode and this is easier than other mutations.
+        buf[43] = 0;  // Break the signature: transcendencej won't check in SPV mode and this is easier than other mutations.
         send1 = PARAMS.getDefaultSerializer().makeTransaction(buf);
         wallet.commitTx(send2);
         wallet.allowSpendingUnconfirmedTransactions();
@@ -1779,7 +1779,7 @@ public class WalletTest extends TestWithWallet {
     @Test
     public void autosaveImmediate() throws Exception {
         // Test that the wallet will save itself automatically when it changes.
-        File f = File.createTempFile("airwirej-unit-test", null);
+        File f = File.createTempFile("transcendencej-unit-test", null);
         Sha256Hash hash1 = Sha256Hash.of(f);
         // Start with zero delay and ensure the wallet file changes after adding a key.
         wallet.autosaveToFile(f, 0, TimeUnit.SECONDS, null);
@@ -1801,7 +1801,7 @@ public class WalletTest extends TestWithWallet {
         // an auto-save cycle of 1 second.
         final File[] results = new File[2];
         final CountDownLatch latch = new CountDownLatch(3);
-        File f = File.createTempFile("airwirej-unit-test", null);
+        File f = File.createTempFile("transcendencej-unit-test", null);
         Sha256Hash hash1 = Sha256Hash.of(f);
         wallet.autosaveToFile(f, 1, TimeUnit.SECONDS,
                 new WalletFiles.Listener() {

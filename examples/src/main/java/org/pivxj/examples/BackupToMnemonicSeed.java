@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.Utils;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.wallet.DeterministicSeed;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.Utils;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.wallet.DeterministicSeed;
+import org.transcendencej.wallet.Wallet;
 
 /**
  * The following example shows you how to create a deterministic seed from a hierarchical deterministic wallet represented as a mnemonic code.

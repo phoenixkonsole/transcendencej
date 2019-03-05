@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.*;
-import org.airwirej.testing.*;
-import org.airwirej.utils.*;
+import org.transcendencej.params.*;
+import org.transcendencej.testing.*;
+import org.transcendencej.utils.*;
 import org.junit.*;
 
 import java.net.*;
 
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class TxConfidenceTableTest {

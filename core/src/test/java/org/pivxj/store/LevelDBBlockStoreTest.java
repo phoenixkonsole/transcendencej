@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.airwirej.store;
+package org.transcendencej.store;
 
-import org.airwirej.core.*;
-import org.airwirej.params.*;
+import org.transcendencej.core.*;
+import org.transcendencej.params.*;
 import org.junit.*;
 
 import java.io.*;

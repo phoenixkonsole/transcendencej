@@ -12,19 +12,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.listeners.PreMessageReceivedEventListener;
-import org.airwirej.core.*;
-import org.airwirej.kits.WalletAppKit;
-import org.airwirej.params.RegTestParams;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.listeners.PreMessageReceivedEventListener;
+import org.transcendencej.core.*;
+import org.transcendencej.kits.WalletAppKit;
+import org.transcendencej.params.RegTestParams;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.Wallet;
 
 import java.io.File;
 
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 
 /**
  * This is a little test app that waits for a coin on a local regtest node, then  generates two transactions that double

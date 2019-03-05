@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.listeners.PeerConnectedEventListener;
-import org.airwirej.core.listeners.PeerDisconnectedEventListener;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.Peer;
-import org.airwirej.core.PeerAddress;
-import org.airwirej.core.VersionMessage;
-import org.airwirej.net.discovery.DnsDiscovery;
-import org.airwirej.net.discovery.PeerDiscoveryException;
-import org.airwirej.net.NioClientManager;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.utils.BriefLogFormatter;
+import org.transcendencej.core.listeners.PeerConnectedEventListener;
+import org.transcendencej.core.listeners.PeerDisconnectedEventListener;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.Peer;
+import org.transcendencej.core.PeerAddress;
+import org.transcendencej.core.VersionMessage;
+import org.transcendencej.net.discovery.DnsDiscovery;
+import org.transcendencej.net.discovery.PeerDiscoveryException;
+import org.transcendencej.net.NioClientManager;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

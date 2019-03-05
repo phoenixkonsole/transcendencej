@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.collect.ImmutableList;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.testing.TestWithWallet;
-import org.airwirej.wallet.SendRequest;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.testing.TestWithWallet;
+import org.transcendencej.wallet.SendRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Before;

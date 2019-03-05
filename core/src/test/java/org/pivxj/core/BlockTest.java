@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.io.ByteStreams;
 
-import org.airwirej.core.AbstractBlockChain.NewBlockType;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet2Params;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.script.ScriptOpCodes;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.Wallet.BalanceType;
+import org.transcendencej.core.AbstractBlockChain.NewBlockType;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet2Params;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.script.ScriptOpCodes;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.Wallet.BalanceType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
 
-import static org.airwirej.core.Utils.HEX;
+import static org.transcendencej.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BlockTest {

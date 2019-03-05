@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
 import com.google.protobuf.ByteString;
 import org.junit.Before;

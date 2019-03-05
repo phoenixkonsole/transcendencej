@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.airwirej.testing;
+package org.transcendencej.testing;
 
-import org.airwirej.core.*;
-import org.airwirej.crypto.TransactionSignature;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.BlockStoreException;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.TransactionSignature;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.BlockStoreException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Random;
 
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 import static com.google.common.base.Preconditions.checkState;
 
 public class FakeTxBuilder {

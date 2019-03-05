@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.protocols.payments;
+package org.transcendencej.protocols.payments;
 
-import org.airwirej.core.*;
-import org.airwirej.crypto.X509Utils;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.protocols.payments.PaymentProtocol.Output;
-import org.airwirej.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.airwirej.protocols.payments.PaymentProtocolException.PkiVerificationException;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.testing.FakeTxBuilder;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.X509Utils;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.protocols.payments.PaymentProtocol.Output;
+import org.transcendencej.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.transcendencej.protocols.payments.PaymentProtocolException.PkiVerificationException;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.testing.FakeTxBuilder;
 import org.bitcoin.protocols.payments.Protos;
 import org.bitcoin.protocols.payments.Protos.Payment;
 import org.bitcoin.protocols.payments.Protos.PaymentACK;

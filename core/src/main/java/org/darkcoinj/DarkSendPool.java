@@ -1,9 +1,9 @@
 package org.darkcoinj;
 
-import org.airwirej.core.*;
-import org.airwirej.script.Script;
-import org.airwirej.utils.ContextPropagatingThreadFactory;
-import org.airwirej.utils.Threading;
+import org.transcendencej.core.*;
+import org.transcendencej.script.Script;
+import org.transcendencej.utils.ContextPropagatingThreadFactory;
+import org.transcendencej.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

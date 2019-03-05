@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.protocols.channels;
+package org.transcendencej.protocols.channels;
 
-import org.airwirej.core.*;
-import org.airwirej.script.Script;
-import org.airwirej.script.ScriptBuilder;
-import org.airwirej.testing.TestWithWallet;
-import org.airwirej.wallet.SendRequest;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.*;
+import org.transcendencej.script.Script;
+import org.transcendencej.script.ScriptBuilder;
+import org.transcendencej.testing.TestWithWallet;
+import org.transcendencej.wallet.SendRequest;
+import org.transcendencej.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -40,9 +40,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.testing.FakeTxBuilder.createFakeTx;
-import static org.airwirej.testing.FakeTxBuilder.makeSolvedTestBlock;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeTx;
+import static org.transcendencej.testing.FakeTxBuilder.makeSolvedTestBlock;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)

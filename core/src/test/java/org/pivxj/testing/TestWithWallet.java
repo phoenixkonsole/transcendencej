@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.testing;
+package org.transcendencej.testing;
 
-import org.airwirej.core.*;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.*;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static org.airwirej.testing.FakeTxBuilder.createFakeBlock;
-import static org.airwirej.testing.FakeTxBuilder.createFakeTx;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeBlock;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

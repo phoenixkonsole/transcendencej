@@ -12,12 +12,12 @@
  * limitations under the License.
  */
 
-package org.airwirej.protocols.channels;
+package org.transcendencej.protocols.channels;
 
-import org.airwirej.core.Coin;
-import org.airwirej.core.Sha256Hash;
-import org.airwirej.core.TransactionBroadcaster;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.Coin;
+import org.transcendencej.core.Sha256Hash;
+import org.transcendencej.core.TransactionBroadcaster;
+import org.transcendencej.wallet.Wallet;
 
 import com.google.common.base.Objects;
 import com.google.common.util.concurrent.Futures;

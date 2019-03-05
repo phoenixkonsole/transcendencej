@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.wallet.Wallet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,10 @@ import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.core.Utils.HEX;
-import static org.airwirej.testing.FakeTxBuilder.createFakeBlock;
-import static org.airwirej.testing.FakeTxBuilder.createFakeTx;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.core.Utils.HEX;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeBlock;
+import static org.transcendencej.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 public class ParseByteCacheTest {

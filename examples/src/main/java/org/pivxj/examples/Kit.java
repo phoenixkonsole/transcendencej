@@ -12,26 +12,26 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.*;
-import org.airwirej.kits.WalletAppKit;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.script.Script;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.listeners.KeyChainEventListener;
-import org.airwirej.wallet.listeners.ScriptsChangeEventListener;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.airwirej.wallet.listeners.WalletCoinsSentEventListener;
+import org.transcendencej.core.*;
+import org.transcendencej.kits.WalletAppKit;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.script.Script;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.listeners.KeyChainEventListener;
+import org.transcendencej.wallet.listeners.ScriptsChangeEventListener;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.wallet.listeners.WalletCoinsSentEventListener;
 
 import java.io.File;
 import java.util.List;
 
-import org.airwirej.core.listeners.TransactionConfidenceEventListener;
+import org.transcendencej.core.listeners.TransactionConfidenceEventListener;
 
 /**
- * The following example shows how to use the by airwirej provided WalletAppKit.
- * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV airwirej app.
+ * The following example shows how to use the by transcendencej provided WalletAppKit.
+ * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV transcendencej app.
  * 
  * In this example we also define a WalletEventListener class with implementors that are called when the wallet changes (for example sending/receiving money)
  */
@@ -59,7 +59,7 @@ public class Kit {
         //kit.connectToLocalHost();
 
         // Now we start the kit and sync the blockchain.
-        // airwirej is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
+        // transcendencej is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
         kit.startAsync();
         kit.awaitRunning();
 

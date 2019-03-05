@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.protocols.channels;
+package org.transcendencej.protocols.channels;
 
-import org.airwirej.core.*;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.WalletExtension;
+import org.transcendencej.core.*;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.WalletExtension;
 import org.bitcoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.easymock.EasyMock;

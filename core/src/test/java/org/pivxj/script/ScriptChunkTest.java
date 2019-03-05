@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.airwirej.script;
+package org.transcendencej.script;
 
-import static org.airwirej.script.ScriptOpCodes.OP_PUSHDATA1;
-import static org.airwirej.script.ScriptOpCodes.OP_PUSHDATA2;
-import static org.airwirej.script.ScriptOpCodes.OP_PUSHDATA4;
+import static org.transcendencej.script.ScriptOpCodes.OP_PUSHDATA1;
+import static org.transcendencej.script.ScriptOpCodes.OP_PUSHDATA2;
+import static org.transcendencej.script.ScriptOpCodes.OP_PUSHDATA4;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.collect.*;
-import org.airwirej.core.TransactionConfidence.*;
-import org.airwirej.store.*;
-import org.airwirej.testing.*;
-import org.airwirej.wallet.*;
+import org.transcendencej.core.TransactionConfidence.*;
+import org.transcendencej.store.*;
+import org.transcendencej.testing.*;
+import org.transcendencej.wallet.*;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -29,7 +29,7 @@ import org.junit.runners.*;
 import java.math.*;
 import java.util.*;
 
-import static org.airwirej.core.Utils.*;
+import static org.transcendencej.core.Utils.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

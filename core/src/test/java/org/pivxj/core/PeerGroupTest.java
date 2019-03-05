@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.*;
 import com.google.common.net.*;
 import com.google.common.util.concurrent.*;
-import org.airwirej.core.listeners.*;
-import org.airwirej.net.discovery.*;
-import org.airwirej.testing.*;
-import org.airwirej.utils.*;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.listeners.*;
+import org.transcendencej.net.discovery.*;
+import org.transcendencej.testing.*;
+import org.transcendencej.utils.*;
+import org.transcendencej.wallet.Wallet;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -36,7 +36,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-import static org.airwirej.core.Coin.*;
+import static org.transcendencej.core.Coin.*;
 import static org.junit.Assert.*;
 
 

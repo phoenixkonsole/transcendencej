@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.uri;
+package org.transcendencej.uri;
 
-import org.airwirej.core.Address;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.TestNet3Params;
+import org.transcendencej.core.Address;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.TestNet3Params;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
-import org.airwirej.core.CoinDefinition;
+import org.transcendencej.core.CoinDefinition;
 
-import static org.airwirej.core.Coin.*;
-import org.airwirej.core.NetworkParameters;
+import static org.transcendencej.core.Coin.*;
+import org.transcendencej.core.NetworkParameters;
 import static org.junit.Assert.*;
 
 public class SendURITest {

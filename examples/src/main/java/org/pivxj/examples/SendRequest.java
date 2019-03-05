@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import org.airwirej.core.*;
-import org.airwirej.kits.WalletAppKit;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.Wallet.BalanceType;
+import org.transcendencej.core.*;
+import org.transcendencej.kits.WalletAppKit;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import java.math.BigInteger;
 import java.util.Date;

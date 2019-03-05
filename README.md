@@ -1,6 +1,6 @@
-### Welcome to airwirej
+### Welcome to transcendencej
 
-The airwirej library is a Java implementation of the PIVX protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of PIVX Core. It comes with full documentation and some example apps showing how to use it.
+The transcendencej library is a Java implementation of the PIVX protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of PIVX Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
@@ -43,7 +43,7 @@ If you send coins to that address, it will forward them on to the address you sp
 
 ```
   cd examples
-  mvn exec:java -Dexec.mainClass=org.airwirej.examples.ForwardingService -Dexec.args="<insert a send address here>"
+  mvn exec:java -Dexec.mainClass=org.transcendencej.examples.ForwardingService -Dexec.args="<insert a send address here>"
 
 ```
 

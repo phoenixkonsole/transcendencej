@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import java.net.InetAddress;
-import org.airwirej.core.FullPrunedBlockChain;
-import org.airwirej.core.PeerGroup;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.store.FullPrunedBlockStore;
-import org.airwirej.store.LevelDBFullPrunedBlockStore;
+import org.transcendencej.core.FullPrunedBlockChain;
+import org.transcendencej.core.PeerGroup;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.store.FullPrunedBlockStore;
+import org.transcendencej.store.LevelDBFullPrunedBlockStore;
 
 public class LevelDB {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.BaseEncoding;

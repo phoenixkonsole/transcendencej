@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
-import org.airwirej.core.*;
-import org.airwirej.crypto.KeyCrypterException;
-import org.airwirej.kits.WalletAppKit;
-import org.airwirej.params.MainNetParams;
-import org.airwirej.params.RegTestParams;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.store.FlatDB;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.core.*;
+import org.transcendencej.crypto.KeyCrypterException;
+import org.transcendencej.kits.WalletAppKit;
+import org.transcendencej.params.MainNetParams;
+import org.transcendencej.params.RegTestParams;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.store.FlatDB;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -87,7 +87,7 @@ public class ForwardingService {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet w, Transaction tx, Coin prevBalance, Coin newBalance) {
-                // Runs in the dedicated "user thread" (see airwirej docs for more info on this).
+                // Runs in the dedicated "user thread" (see transcendencej docs for more info on this).
                 //
                 // The transaction "tx" can either be pending, or included into a block (we didn't see the broadcast).
                 Coin value = tx.getValueSentToMe(w);

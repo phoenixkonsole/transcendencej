@@ -15,9 +15,9 @@
 package wallettemplate;
 
 import javafx.scene.layout.HBox;
-import org.airwirej.core.*;
-import org.airwirej.wallet.SendRequest;
-import org.airwirej.wallet.Wallet;
+import org.transcendencej.core.*;
+import org.transcendencej.wallet.SendRequest;
+import org.transcendencej.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

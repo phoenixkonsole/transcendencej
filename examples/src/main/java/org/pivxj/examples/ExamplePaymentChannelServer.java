@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.airwirej.examples;
+package org.transcendencej.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.airwirej.core.Coin;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.Sha256Hash;
-import org.airwirej.core.VerificationException;
-import org.airwirej.kits.WalletAppKit;
-import org.airwirej.params.RegTestParams;
-import org.airwirej.protocols.channels.*;
-import org.airwirej.utils.BriefLogFormatter;
-import org.airwirej.wallet.WalletExtension;
+import org.transcendencej.core.Coin;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.Sha256Hash;
+import org.transcendencej.core.VerificationException;
+import org.transcendencej.kits.WalletAppKit;
+import org.transcendencej.params.RegTestParams;
+import org.transcendencej.protocols.channels.*;
+import org.transcendencej.utils.BriefLogFormatter;
+import org.transcendencej.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

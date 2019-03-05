@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.core.NetworkParameters.MAX_MONEY;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.core.NetworkParameters.MAX_MONEY;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

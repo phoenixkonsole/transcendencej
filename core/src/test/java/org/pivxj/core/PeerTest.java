@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import com.google.common.collect.*;
-import org.airwirej.core.listeners.*;
-import org.airwirej.params.TestNet3Params;
-import org.airwirej.testing.FakeTxBuilder;
-import org.airwirej.testing.InboundMessageQueuer;
-import org.airwirej.testing.TestWithNetworkConnections;
-import org.airwirej.utils.Threading;
-import org.airwirej.wallet.Wallet;
-import org.airwirej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.transcendencej.core.listeners.*;
+import org.transcendencej.params.TestNet3Params;
+import org.transcendencej.testing.FakeTxBuilder;
+import org.transcendencej.testing.InboundMessageQueuer;
+import org.transcendencej.testing.TestWithNetworkConnections;
+import org.transcendencej.utils.Threading;
+import org.transcendencej.wallet.Wallet;
+import org.transcendencej.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -52,8 +52,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.airwirej.core.Coin.*;
-import static org.airwirej.testing.FakeTxBuilder.*;
+import static org.transcendencej.core.Coin.*;
+import static org.transcendencej.testing.FakeTxBuilder.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

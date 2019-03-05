@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.airwirej.core;
+package org.transcendencej.core;
 
 import junit.framework.TestCase;
 import org.junit.Test;

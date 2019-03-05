@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
-import org.airwirej.core.BlockChain;
-import org.airwirej.core.Context;
-import org.airwirej.core.NetworkParameters;
-import org.airwirej.core.StoredBlock;
-import org.airwirej.params.UnitTestParams;
-import org.airwirej.store.BlockStore;
-import org.airwirej.store.BlockStoreException;
-import org.airwirej.store.MemoryBlockStore;
-import org.airwirej.testing.FakeTxBuilder;
+import org.transcendencej.core.BlockChain;
+import org.transcendencej.core.Context;
+import org.transcendencej.core.NetworkParameters;
+import org.transcendencej.core.StoredBlock;
+import org.transcendencej.params.UnitTestParams;
+import org.transcendencej.store.BlockStore;
+import org.transcendencej.store.BlockStoreException;
+import org.transcendencej.store.MemoryBlockStore;
+import org.transcendencej.testing.FakeTxBuilder;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;

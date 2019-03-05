@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.airwirej.utils;
+package org.transcendencej.utils;
 
-import static org.airwirej.core.Coin.CENT;
-import static org.airwirej.core.Coin.COIN;
-import static org.airwirej.core.Coin.SATOSHI;
-import static org.airwirej.core.Coin.ZERO;
+import static org.transcendencej.core.Coin.CENT;
+import static org.transcendencej.core.Coin.COIN;
+import static org.transcendencej.core.Coin.SATOSHI;
+import static org.transcendencej.core.Coin.ZERO;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Locale;
 
 import org.junit.Test;
 
-import org.airwirej.core.Coin;
+import org.transcendencej.core.Coin;
 
 public class MonetaryFormatTest {
 
