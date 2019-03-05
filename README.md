@@ -1,6 +1,6 @@
 ### Welcome to transcendencej
 
-The transcendencej library is a Java implementation of the PIVX protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of PIVX Core. It comes with full documentation and some example apps showing how to use it.
+The transcendencej library is a Java implementation of the Transcendence protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of Transcendence Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
