@@ -118,7 +118,7 @@ public class CoinDefinition {
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-"159.69.33.146""159.69.33.156""149.28.207.67","94.130.206.190","159.69.33.172","95.216.152.134","[2a02:c207:3003:4813::2]","173.249.59.202"
+"159.69.33.146","159.69.33.156","149.28.207.67","94.130.206.190","159.69.33.172","95.216.152.134","[2a02:c207:3003:4813::2]","173.249.59.202"
     };
 
     public static int minBroadcastConnections = 2;   //0 for default; we need more peers.
