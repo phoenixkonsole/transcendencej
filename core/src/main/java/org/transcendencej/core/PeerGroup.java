@@ -1619,6 +1619,84 @@ public class PeerGroup implements TransactionBroadcaster {
             // Give the peer a filter that can be used to probabilistically drop transactions that
             // aren't relevant to our wallet. We may still receive some false positives, which is
             // OK because it helps improve wallet privacy. Old nodes will just ignore the message.
+
+            lock.lock();
+            try {
+                ListenableFuture<AddressMessage> futAddr = peer.getAddr();
+                Futures.addCallback(futAddr, new FutureCallback<AddressMessage>() {
+                    @Override
+                    public void onSuccess(AddressMessage mesResult) {
+                        List<PeerAddress> addrs = mesResult.getAddresses();
+                        for (PeerAddress addr : addrs) {
+                            String newPeerAddress = addr.getAddr().getHostAddress();
+                            boolean isPeerAdded = false;
+                            for (Peer curPeer : pendingPeers) {
+                                if (newPeerAddress.equals(curPeer.getAddress().getAddr().getHostAddress())) {
+                                    isPeerAdded = true;
+                                    break;
+                                }
+                            }
+                            for (Peer curPeer : peers) {
+                                if (newPeerAddress.equals(curPeer.getAddress().getAddr().getHostAddress())) {
+                                    isPeerAdded = true;
+                                    break;
+                                }
+                            }
+
+                            if (isPeerAdded) {
+                                addrs.remove(addr);
+                                continue;
+                            }
+                         }
+
+                        for (PeerAddress addr : addrs) {
+                            backoffMap.put(addr, new ExponentialBackoff(peerBackoffParams));
+                                
+                            VersionMessage ver = getVersionMessage().duplicate();
+                            ver.bestHeight = chain == null ? 0 : chain.getBestChainHeight();
+                            ver.time = Utils.currentTimeSeconds();
+                    
+                            Peer peer = createPeer(addr, ver);
+                            peer.addConnectedEventListener(Threading.SAME_THREAD, startupListener);
+                            peer.addDisconnectedEventListener(Threading.SAME_THREAD, startupListener);
+                            peer.setMinProtocolVersion(vMinRequiredProtocolVersion);
+                            pendingPeers.add(peer);
+                        }
+
+
+                        addPeerDiscovery(new PeerDiscovery() {
+   
+                            @Override
+                            public InetSocketAddress[] getPeers(final long services, final long timeoutValue, final TimeUnit timeoutUnit)
+                                    throws PeerDiscoveryException {
+                                final List<InetSocketAddress> newPeers = new LinkedList<InetSocketAddress>();
+
+                                for (Peer curPeer : pendingPeers) {
+                                    newPeers.add(curPeer.getAddress().getSocketAddress());
+                                }
+                                for (Peer curPeer : peers) {
+                                    newPeers.add(curPeer.getAddress().getSocketAddress());
+                                }
+                                return newPeers.toArray(new InetSocketAddress[0]);
+                            }
+    
+                            @Override
+                            public void shutdown() {
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onFailure(Throwable t) {
+                        log.info("Failed to get peers from {}", peer.getAddress().getAddr().getHostAddress());
+                    }
+                });
+            }
+            finally {
+                lock.unlock();
+            }
+
             if (bloomFilterMerger.getLastFilter() != null) peer.setBloomFilter(bloomFilterMerger.getLastFilter());
             peer.setDownloadData(false);
             // TODO: The peer should calculate the fast catchup time from the added wallets here.

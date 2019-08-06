@@ -79,7 +79,7 @@ public class CoinDefinition {
     //
     // TELOS 0.12
     //
-    public static final int PROTOCOL_VERSION = 71002;          //version.h PROTOCOL_VERSION
+    public static final int PROTOCOL_VERSION = 71004;          //version.h PROTOCOL_VERSION
     public static final int MIN_PROTOCOL_VERSION = 71002;        //version.h MIN_PROTO_VERSION
 
     public static final int BLOCK_CURRENTVERSION = 2;   //CBlock::CURRENT_VERSION
@@ -88,12 +88,12 @@ public class CoinDefinition {
 
     public static final boolean supportsBloomFiltering = true; //Requires PROTOCOL_VERSION 70000 in the client
 
-    public static final int Port    = 22123;       //protocol.h GetDefaultPort(testnet=false)
+    public static final int Port    = 8051;       //protocol.h GetDefaultPort(testnet=false)
     public static final int TestPort = 51474;     //protocol.h GetDefaultPort(testnet=true)
 
     /** Zerocoin starting block height */
     public static final long TESTNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 201564;
-    public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 291;
+    public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 292;
 
     //
     //  Production
@@ -101,8 +101,8 @@ public class CoinDefinition {
     public static final int AddressHeader = 38;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS
     public static final int p2shHeader = 138;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS
     public static final int dumpedPrivateKeyHeader = 128;   //common to all coins
-    public static final long oldPacketMagic = 0xfbc0b6db;      //0xfb, 0xc0, 0xb6, 0xdb
-    public static final long PacketMagic = 0x2f754d39;
+    public static final long oldPacketMagic = 0x2f754d39;      //0xfb, 0xc0, 0xb6, 0xdb
+    public static final long PacketMagic = 0x54454C53;
 
     //Genesis Block Information from main.cpp: LoadBlockIndex
     static public long genesisBlockDifficultyTarget = 0x1e0ffff0;         //main.cpp: LoadBlockIndex
@@ -118,7 +118,8 @@ public class CoinDefinition {
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-"159.69.33.146","159.69.33.156","149.28.207.67","94.130.206.190","159.69.33.172","95.216.152.134","[2a02:c207:3003:4813::2]","173.249.59.202"
+        "5.189.139.203", //AWS DNS-seeder
+        "176.9.74.62","159.69.33.146","159.69.33.156","159.69.33.171","159.69.33.172","149.28.207.67","94.130.206.190","95.216.152.134"
     };
 
     public static int minBroadcastConnections = 2;   //0 for default; we need more peers.
@@ -129,7 +130,7 @@ public class CoinDefinition {
     public static final boolean supportsTestNet = true;
     public static final int testnetAddressHeader = 139;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS_TEST
     public static final int testnetp2shHeader = 19;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS_TEST
-    public static final long testnetPacketMagic = 0x457665ba;      //
+    public static final long testnetPacketMagic = 0x544565ba;      //
     public static final String testnetGenesisHash =  "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818";
     static public long testnetGenesisBlockDifficultyTarget = (0x1e0ffff0);         //main.cpp: LoadBlockIndex
     static public long testnetGenesisBlockTime = 1454124731L;                       //main.cpp: LoadBlockIndex

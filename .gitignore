@@ -1,0 +1,8 @@
+# Java class files
+*.class
+
+#generated files
+core/target/*
+tools/target/*
+examples/target/*
+wallettemplate/target/maven-status/*
