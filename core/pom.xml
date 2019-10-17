@@ -219,6 +219,7 @@
                                         <urn>org.slf4j:slf4j-jdk14:1.7.20:jar:null:test:b568c92eec50edc922c52b3e759982579170c2be</urn>
                                         <urn>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.5:maven-plugin:null:runtime:455ca2aa8cd14a06608f1538bd6a1efd09561563</urn>
                                         <urn>postgresql:postgresql:9.1-901.jdbc4:jar:null:compile:153f2f92a786f12fc111d0111f709012df87c808</urn>
+                                        <urn>dnsjava:dnsjava:2.1.9:jar:null:compile:1570E1D39BE4CEC06DB9C682597C8B7EE0B201A5</urn>
                                         <!-- A check for the rules themselves -->
                                         <urn>uk.co.froot.maven.enforcer:digest-enforcer-rules:0.0.1:jar:null:runtime:16a9e04f3fe4bb143c42782d07d5faf65b32106f</urn>
                                     </urns>
@@ -435,6 +436,11 @@
             <groupId>com.squareup.okhttp</groupId>
             <artifactId>okhttp</artifactId>
             <version>2.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>dnsjava</groupId>
+            <artifactId>dnsjava</artifactId>
+            <version>2.1.9</version>
         </dependency>
     </dependencies>
 
