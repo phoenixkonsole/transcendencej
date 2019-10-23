@@ -131,9 +131,14 @@ public class CheckpointManager {
             digestInputStream.on(true);
             int numCheckpoints = dis.readInt();
             checkState(numCheckpoints > 0);
-            final int size = StoredBlock.COMPACT_SERIALIZED_SIZE;
+            int size = StoredBlock.COMPACT_SERIALIZED_SIZE;
             ByteBuffer buffer = ByteBuffer.allocate(size);
             for (int i = 0; i < numCheckpoints; i++) {
+                if (i + 1 == this.params.getZerocoinStartedHeight())
+                {
+                    size = StoredBlock.COMPACT_SERIALIZED_SIZE_ZEROCOIN;
+                    buffer = ByteBuffer.allocate(size);
+                }
                 if (dis.read(buffer.array(), 0, size) < size)
                     throw new IOException("Incomplete read whilst loading checkpoints.");
                 StoredBlock block = StoredBlock.deserializeCompact(params, buffer);

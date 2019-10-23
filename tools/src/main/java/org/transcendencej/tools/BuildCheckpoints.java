@@ -129,19 +129,14 @@ public class BuildCheckpoints {
         long now = new Date().getTime() / 1000;
         peerGroup.setFastCatchupTimeSecs(now);
 
-        final long timeAgo = now - (86400 * 170);//options.valueOf(daysFlag));
+        final long timeAgo = now - (options.valueOf(daysFlag) * 60 * 60 * 24);
         System.out.println("Checkpointing up to " + Utils.dateTimeFormat(timeAgo * 1000));
 
         chain.addNewBestBlockListener(Threading.SAME_THREAD, new NewBestBlockListener() {
             @Override
             public void notifyNewBestBlock(StoredBlock block) throws VerificationException {
-                int height = block.getHeight();
-                System.out.println("block height: "+block.getHeight());
-                if (height /*% CoinDefinition.getIntervalCheckpoints()*/ == 116754 /*&& block.getHeader().getTimeSeconds() <= timeAgo*/) {
-                //if(height == 201500){
-                    System.out.println(String.format("Checkpointing block %s at height %d, time %s",
-                            block.getHeader().getHash(), block.getHeight(), Utils.dateTimeFormat(block.getHeader().getTime())));
-                    checkpoints.put(height, block);
+                if (block.getHeader().getTimeSeconds() < timeAgo) {
+                    checkpoints.put(block.getHeight(), block);
                 }
             }
         });
@@ -155,7 +150,7 @@ public class BuildCheckpoints {
         final File textFile = new File("checkpoints" + suffix + ".txt");
 
         // Write checkpoint data out.
-        writeBinaryCheckpoints(checkpoints, plainFile);
+        writeBinaryCheckpoints(checkpoints, plainFile, params);
         writeTextualCheckpoints(checkpoints, textFile);
 
         peerGroup.stop();
@@ -166,7 +161,7 @@ public class BuildCheckpoints {
         sanityCheck(textFile, checkpoints.size());
     }
 
-    private static void writeBinaryCheckpoints(TreeMap<Integer, StoredBlock> checkpoints, File file) throws Exception {
+    private static void writeBinaryCheckpoints(TreeMap<Integer, StoredBlock> checkpoints, File file, NetworkParameters params) throws Exception {
         final FileOutputStream fileOutputStream = new FileOutputStream(file, false);
         MessageDigest digest = Sha256Hash.newDigest();
         final DigestOutputStream digestOutputStream = new DigestOutputStream(fileOutputStream, digest);
@@ -178,6 +173,9 @@ public class BuildCheckpoints {
         dataOutputStream.writeInt(checkpoints.size());
         ByteBuffer buffer = ByteBuffer.allocate(StoredBlock.COMPACT_SERIALIZED_SIZE);
         for (StoredBlock block : checkpoints.values()) {
+            if (block.getHeight() >= params.getZerocoinStartedHeight()) {
+                buffer = ByteBuffer.allocate(StoredBlock.COMPACT_SERIALIZED_SIZE_ZEROCOIN);
+            }
             block.serializeCompact(buffer);
             dataOutputStream.write(buffer.array());
             buffer.position(0);
@@ -195,7 +193,7 @@ public class BuildCheckpoints {
         writer.println("TXT CHECKPOINTS 1");
         writer.println("0"); // Number of signatures to read. Do this later.
         writer.println(checkpoints.size());
-        ByteBuffer buffer = ByteBuffer.allocate(StoredBlock.COMPACT_SERIALIZED_SIZE);
+        ByteBuffer buffer = ByteBuffer.allocate(StoredBlock.COMPACT_SERIALIZED_SIZE_ZEROCOIN);
         for (StoredBlock block : checkpoints.values()) {
             block.serializeCompact(buffer);
             writer.println(CheckpointManager.BASE64.encode(buffer.array()));

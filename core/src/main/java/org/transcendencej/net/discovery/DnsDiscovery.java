@@ -23,6 +23,12 @@ import org.transcendencej.utils.*;
 import java.net.*;
 import java.util.*;
 import java.util.concurrent.*;
+import org.xbill.DNS.SimpleResolver;
+import org.xbill.DNS.TextParseException;
+import org.xbill.DNS.ARecord;
+import org.xbill.DNS.Lookup;
+import org.xbill.DNS.Record;
+import org.xbill.DNS.Type;
 
 /**
  * <p>Supports peer discovery through DNS.</p>
@@ -88,12 +94,20 @@ public class DnsDiscovery extends MultiplexingDiscovery {
             if (services != 0)
                 throw new PeerDiscoveryException("DNS seeds cannot filter by services: " + services);
             try {
-                InetAddress[] response = InetAddress.getAllByName(hostname);
-                InetSocketAddress[] result = new InetSocketAddress[response.length];
-                for (int i = 0; i < response.length; i++)
-                    result[i] = new InetSocketAddress(response[i], params.getPort());
-                return result;
+                SimpleResolver resolver = new SimpleResolver(hostname);
+                Lookup lookup = new Lookup(hostname);
+                lookup.setResolver(resolver);
+                Record[] records = lookup.run();
+                InetSocketAddress[] results = new InetSocketAddress[records.length];
+                for (int i = 0; i < records.length; i++) {
+                    if (records[i].getType() == Type.A) {
+                        results[i] = new InetSocketAddress(((ARecord)records[i]).getAddress(), params.getPort());
+                    }
+                }
+                return results;
             } catch (UnknownHostException e) {
+                throw new PeerDiscoveryException(e);
+            } catch (TextParseException e) {
                 throw new PeerDiscoveryException(e);
             }
         }
